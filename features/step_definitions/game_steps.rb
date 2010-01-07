@@ -1,7 +1,14 @@
 # encoding: utf-8
 $:.unshift(File.dirname(__FILE__) + '/../../lib')
-#require 'poker'
 
-Gitt /^at (.*) har (.*)$/ do |spiller, hånd|
-  pending # express the regexp above with the code you wish you had
+Given /^at (.*) har (.*)$/ do |player_name, hand|
+#  player = Game.player player_name
+#  player.hand = hand
+end
+Given /^(.*) har (.*)$/ do |player_name, hand|
+#  player ||= Game.player player_name
+  pending
+end
+Then /^skal (.*) vinne$/ do |spiller|
+  pending
 end
