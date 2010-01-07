@@ -3,3 +3,6 @@ target
 *.suo
 bin
 obj
+*.iml
+*.ipr
+*.iws
