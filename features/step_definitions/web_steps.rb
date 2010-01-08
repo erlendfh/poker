@@ -19,3 +19,7 @@ end
 When /^I press "([^\"]*)"$/ do |button|
   pending
 end
+
+Then /^I should be at "([^\"]*)"$/ do |arg1|
+  pending
+end
