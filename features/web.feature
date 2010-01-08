@@ -15,6 +15,7 @@ Scenario: Fill in score
   And   I fill in "Hand 2" with "KC KD"
   And   I fill in "Table Cards" with "1H 2C 3D"
   And   I press "Submit"
-  Then  I should be at "the start page"
-  And   I should see "Status"
+  Then  I should be on "the start page"
+  And   I should see "Winner"
+  And   I should see "Winner Hand"
 
