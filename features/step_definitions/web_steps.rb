@@ -13,13 +13,13 @@ And /^I should see the button "([^\"]*)"$/ do |text|
 end
 
 When /^I fill in "([^\"]*)" with "([^\"]*)"$/ do |field, value|
-  pending
+  fill_in(field, :with => value)
 end
 
 When /^I press "([^\"]*)"$/ do |button|
-  pending
+  click_button(button)
 end
 
-Then /^I should be at "([^\"]*)"$/ do |arg1|
-  pending
+Then /^I should be on "([^\"]*)"$/ do |page|
+  URI.parse(current_url).path.should == path_to(page)
 end

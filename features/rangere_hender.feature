@@ -2,7 +2,6 @@
 #
 # Rangering: http://www.thepokerforum.com/pokerhands.htm
 #
-<<<<<<< HEAD
 #Egenskap: Rangere hender
 #  For å kunne peke ut en vinner raskere på TV
 #  skal TV verten bli fortalt hvilken hånd som er høyest
@@ -11,7 +10,6 @@
 #    Gitt at hvit har 2K 2H 3S 4K 6H
 #    Og at svart har AH KK QS 7R 9S
 #    Så skal hvit vinne
-=======
 Feature: Rangere hender
   For å kunne peke ut en vinner raskere på TV
   skal TV verten bli fortalt hvilken hånd som er høyest
@@ -25,4 +23,3 @@ Feature: Rangere hender
     Given hvit har 2K 2H 3S 3K 6H
     When at svart har AH AK QS 7R 9S
     Then skal hvit vinne
->>>>>>> 1ec155f8e74dc3812bea71fe9d386da6360026fd
