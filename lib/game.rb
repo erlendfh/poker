@@ -1,5 +1,9 @@
 class Game
-  def add_hand player, hand
+  def add_player name, hand
+    
+  end
+  
+  def table_cards= cards
     
   end
   
