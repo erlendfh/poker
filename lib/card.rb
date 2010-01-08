@@ -1,6 +1,10 @@
 class Card
   def initialize(val)
-    @value = val.split ""
+    matches = val.match /^(.+)(.)$/
+    @value = matches[1]
+    @suite = matches[2]
+    
+    
     @picture_cards = {
       "J" => 11,
       "Q" => 12,
@@ -9,21 +13,21 @@ class Card
     }
   end
   
-  def value
-    @value.join
+  def to_s
+    @value + @suite
   end
   
   
   def number_value
-    if @picture_cards.key? @value[0]
-      @picture_cards[@value[0]]
+    if @picture_cards.key? @value
+      @picture_cards[@value]
     else
-      @value[0].to_i
+      @value.to_i
     end
   end
   
   def suite
-    @value[1]
+    @suite
   end
 
 end
