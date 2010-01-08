@@ -29,5 +29,5 @@ class Card
   def suite
     @suite
   end
-
+  
 end

@@ -19,3 +19,13 @@ Scenario: Fill in score
   And   I should see "Winner"
   And   I should see "Winner Hand"
 
+Scenario: High Card, Show winner
+  Given I am on "the start page"
+  When  I fill in "Hand 1" with "QH AC"
+  And   I fill in "Hand 2" with "KC JD"
+  And   I fill in "Table Cards" with "1H 2C 3D"
+  And   I press "Submit"
+  Then  I should be on "the start page"
+  And   I should see "Winner: Hand 1"
+  And   I should see "Winner Hand: AC QH 3D 2C 1H"
+
