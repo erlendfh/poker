@@ -1,5 +1,6 @@
 $:.unshift(File.join(File.dirname(__FILE__), '/../lib'))
 require 'card'
+require 'spec'
 
 describe Card do
   it "should return 6 for number value when card is 6H" do

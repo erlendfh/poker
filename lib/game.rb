@@ -9,11 +9,11 @@ class Game
   end
   
   def table_cards=(cards)
-    @table_cards = parse_cards(cards)
+    @table_cards = Game.parse_cards(cards)
   end
   
   def add_player(name, hand)
-    @players << Player.new(name, @table_cards + parse_cards(hand))
+    @players << Player.new(name, @table_cards + Game.parse_cards(hand))
   end
     
   def winner    
@@ -21,9 +21,8 @@ class Game
     @players.each { |player| winner = player if player.score > winner.score }
     winner.name
   end
-  
-  private
-  def parse_cards cards
+
+  def Game.parse_cards cards
     cards.split.map { |c| Card.new(c) }
   end
   

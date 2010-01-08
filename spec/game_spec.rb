@@ -1,5 +1,6 @@
 $:.unshift(File.join(File.dirname(__FILE__), '/../lib'))
 require 'game'
+require 'spec'
 
 describe Game do
   

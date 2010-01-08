@@ -1,6 +1,7 @@
 $:.unshift(File.join(File.dirname(__FILE__), %w[.. lib]))
 require 'hand_pair'
 require 'card'
+require 'spec'
 
 describe HandPair do
 

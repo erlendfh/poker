@@ -1,6 +1,7 @@
 $:.unshift(File.join(File.dirname(__FILE__), '/../lib'))
 require 'hand'
 require 'card'
+require 'spec'
 
 describe Hand do
   

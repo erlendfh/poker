@@ -1,6 +1,7 @@
 $:.unshift(File.join(File.dirname(__FILE__), '/../lib'))
 require 'hand_high_card'
 require 'card'
+require 'spec'
 
 describe HandHighCard do
   hand_examples = [
@@ -13,7 +14,7 @@ describe HandHighCard do
   it "should pick the highest card from hand" do
     hand_examples.each do |hand_with_highest|
       highcard = HandHighCard.new
-      highcard.find_high_card(parse_hand(hand_with_highest[0])).to_s.should == hand_with_highest[1]
+      highcard.find_high_card(Game.parse_cards(hand_with_highest[0])).to_s.should == hand_with_highest[1]
     end  
   end
   
