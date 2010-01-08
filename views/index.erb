@@ -1,0 +1,22 @@
+<form id="hands" method="post">
+    <p>
+        <label for="hand1">Hand 1</label><br/>
+        <input type="text" id="hand1"/>
+    </p>
+
+    <p>
+        <label for="hand2">Hand 2</label><br/>
+        <input type="text" id="hand2"/>
+    </p>
+
+    <p>
+        <label for="tableCards">Table Cards</label><br/>
+        <input type="text" id="tableCards"/>
+    </p>
+    <input id="submit" type="submit" value="Submit"/>
+</form>
+
+<% if @winner_name %>
+    Winner: <%= @winner_name %><br/>
+    Winner Hand: <%= @winner_hand %>
+<% end %>
