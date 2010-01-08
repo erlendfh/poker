@@ -1,0 +1,3 @@
+class HandPair
+  
+end

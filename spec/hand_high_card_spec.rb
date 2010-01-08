@@ -17,9 +17,6 @@ describe HandHighCard do
     end  
   end
   
-  private
-  def parse_hand hand
-    hand.split.map { |c| Card.new(c) }
-  end
+
   
 end
